@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@font-face {
+    font-family: "Formula Condensed";
+    src: url("../../fonts/FormulaCondensed-Bold.woff");
+}
+
+// Fonts
+$primary-font: "Inter", sans-serif;
+$secondary-font: "Formula Condensed", sans-serif;
+
+// Primary Colors
+$primary-color: #042825;
+$secondary-color: #ffffff;
+$accent-color: #ff7bac;
+
+// Secondary Colors
+$off-black: #09302d;
