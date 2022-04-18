@@ -33,9 +33,14 @@
             width: 90%;
         }
 
-        @media screen and (max-width: 380px) {
-            font-size: 3.2rem;
+        @media screen and (max-width: 420px) {
+            font-size: 3.9rem;
             width: 80%;
+            margin-top: -8vh;
+        }
+
+        @media screen and (max-width: 375px) {
+            font-size: 3rem;
         }
 
         &--span {
@@ -58,12 +63,40 @@
     .hero__footer {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 2rem 0;
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         border-top: 1px solid #0a5650;
+
+        .hero__email {
+            @media screen and (max-width: 500px) {
+                display: none;
+            }
+        }
+
+        .hero__email-icon {
+            display: none;
+
+            @media screen and (max-width: 500px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #365351;
+                height: 55px;
+                width: 55px;
+                border-radius: 50%;
+            }
+
+            svg {
+                width: 2rem;
+                path {
+                    fill: #fff;
+                }
+            }
+        }
     }
 }
 
@@ -110,6 +143,40 @@
         @media screen and (max-width: 600px) {
             grid-template-columns: repeat(1, 1fr);
             row-gap: 4rem;
+        }
+    }
+}
+
+.about {
+    margin: 10rem auto;
+
+    h2 {
+        font-family: $secondary-font;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 6em;
+        margin-bottom: 5rem;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 10rem;
+        background-color: #09302d;
+
+        h3 {
+            line-height: 120%;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            // font-family: $secondary-font;
+            // letter-spacing: 0.3rem;
+            // text-transform: uppercase;
         }
     }
 }
