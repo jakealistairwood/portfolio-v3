@@ -88,6 +88,21 @@ export const designProjects = [
         },
     },
     {
+        title: "UnityHR",
+        subtitle: "HR Ticket Tracker Software",
+        description:
+            "Dashboard that allows a HR team to keep track of existing and completed tickets.",
+        imgInfo: {
+            imgSrc: "./images/UnityHR.png",
+            imgAlt: `Preview for the UnityHR Ticket Management software`,
+        },
+        figmaLinks: {
+            file: "https://www.figma.com/file/8dLrbMPmmWVRkOTCBarU6G/UnityHR?node-id=23%3A4780",
+            prototype:
+                "https://www.figma.com/proto/8dLrbMPmmWVRkOTCBarU6G/UnityHR?node-id=93%3A4287&scaling=min-zoom&page-id=23%3A4780&starting-point-node-id=93%3A4287&show-proto-sidebar=1",
+        },
+    },
+    {
         title: "Lujam",
         subtitle: "Cyber Security Platform",
         description:
@@ -100,6 +115,21 @@ export const designProjects = [
             file: "https://www.figma.com/file/nNA7MVykoLSwVPJGHG6ylB/Lujam-Portal?node-id=0%3A1",
             prototype:
                 "https://www.figma.com/proto/nNA7MVykoLSwVPJGHG6ylB/Lujam-Portal?node-id=1%3A255&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A255",
+        },
+    },
+    {
+        title: "MyTodos",
+        subtitle: "Todo List App",
+        description:
+            "Built for the students at Nology as part of a front-end development tech test.",
+        imgInfo: {
+            imgSrc: "./images/todos.png",
+            imgAlt: `Preview for the Todo List application`,
+        },
+        figmaLinks: {
+            file: "https://www.figma.com/file/B3qPtN1rHoj3JGPMjT77ns/Tech-Test---MyTodos?node-id=0%3A1",
+            prototype:
+                "https://www.figma.com/proto/B3qPtN1rHoj3JGPMjT77ns/Tech-Test---MyTodos?node-id=303%3A52&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=303%3A52",
         },
     },
 ];

@@ -15,8 +15,8 @@ const Project = ({ project }) => {
                     alt={project.imgInfo.imgAlt}
                 />
             </a>
-            <h4>{project.subtitle}</h4>
-            <h3>{project.title}</h3>
+            <h3>{project.subtitle}</h3>
+            <h4>{project.title}</h4>
         </div>
     );
 };

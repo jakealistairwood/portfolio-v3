@@ -105,22 +105,52 @@
 
     .projects-header {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         margin-bottom: 5rem;
 
-        h2 {
-            font-size: 6rem;
-            font-family: $secondary-font;
-            text-transform: uppercase;
+        div {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
 
-            @media screen and (max-width: 400px) {
-                font-size: 4rem;
+            h2 {
+                font-size: 6rem;
+                font-family: $secondary-font;
+                text-transform: uppercase;
+
+                @media screen and (max-width: 400px) {
+                    font-size: 4rem;
+                }
             }
-        }
 
-        img {
-            @media screen and (max-width: 400px) {
-                width: 3rem;
+            img {
+                @media screen and (max-width: 400px) {
+                    width: 3rem;
+                }
+            }
+
+            .tab-btn {
+                padding: 1rem 2.5rem;
+                background-color: transparent;
+                border: none;
+                border: 1px solid #fff;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 700;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: #fff;
+                    color: $primary-color;
+                }
+
+                &--active {
+                    background-color: #fff;
+                    color: $primary-color;
+                }
             }
         }
     }
@@ -162,6 +192,7 @@
 
         @media screen and (max-width: 500px) {
             padding: 1rem;
+            text-align: left;
         }
 
         h2 {
@@ -219,43 +250,13 @@
             transition: 0.3s ease-in-out;
             cursor: pointer;
 
+            @media screen and (max-width: 500px) {
+                width: 100%;
+            }
+
             &:hover {
                 background-color: #fff;
                 color: $primary-color;
-            }
-        }
-    }
-}
-
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #09302d;
-    text-align: center;
-    height: 15vh;
-    width: 100%;
-    border-top: 1px solid #1a756d;
-
-    .footer__contact-icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .footer__contact-icon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 55px;
-            width: 55px;
-            background-color: #164440;
-            border-radius: 50%;
-            margin-inline: 0.5rem;
-            transition: 0.3s ease-in;
-            cursor: pointer;
-
-            &:hover {
-                background-color: #6fbab4;
             }
         }
     }
