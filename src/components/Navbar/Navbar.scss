@@ -20,6 +20,10 @@
         .navbar__nav-links {
             display: flex;
 
+            @media screen and (max-width: 500px) {
+                display: none;
+            }
+
             .navbar__nav-link {
                 list-style: none;
                 padding: 0 2rem;

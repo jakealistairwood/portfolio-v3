@@ -33,6 +33,11 @@
             width: 90%;
         }
 
+        @media screen and (max-width: 380px) {
+            font-size: 3.2rem;
+            width: 80%;
+        }
+
         &--span {
             color: $secondary-color;
             text-decoration: underline;
@@ -74,6 +79,16 @@
             font-size: 6rem;
             font-family: $secondary-font;
             text-transform: uppercase;
+
+            @media screen and (max-width: 400px) {
+                font-size: 4rem;
+            }
+        }
+
+        img {
+            @media screen and (max-width: 400px) {
+                width: 3rem;
+            }
         }
     }
 
