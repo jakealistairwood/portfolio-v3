@@ -9,14 +9,14 @@ const SocialIconsBar = () => {
         <div className="social-icons">
             <a
                 className="social-icon"
-                href="https://www.linkedin.com/in/jake-wood-72"
+                href="https://www.linkedin.com/in/jake-wood-726141114/"
                 target="_blank"
             >
                 <img src={LinkedinIcon} alt="linkedin-icon" />
             </a>
             <a
                 className="social-icon"
-                href="https://www.linkedin.com/in/jake-wood-72"
+                href="https://www.linkedin.com/in/jake-wood-726141114/"
                 target="_blank"
             >
                 <img src={BehanceIcon} alt="behance-icon" />
