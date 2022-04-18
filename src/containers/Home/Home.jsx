@@ -2,6 +2,9 @@ import React from "react";
 import "./Home.scss";
 import ScrollIndicator from "../../assets/images/icons/scroll-indicator.svg";
 import { designProjects } from "../../data/projects";
+import ArrowDown from "../../assets/images/icons/arrow-down.svg";
+import Project from "../../components/Project/Project";
+import uuid from "react-uuid";
 
 const Home = () => {
     console.log(designProjects);
@@ -21,7 +24,10 @@ const Home = () => {
                     digital experiences.
                 </h1>
                 <div className="hero__scroll-indicator">
-                    <img src={ScrollIndicator} alt="" />
+                    <img
+                        src={ScrollIndicator}
+                        alt="scroll-for-more-indicator"
+                    />
                 </div>
                 <div className="hero__footer">
                     <a
@@ -31,32 +37,19 @@ const Home = () => {
                     >
                         jakealistairwood@gmail.com
                     </a>
-                    <a href="" className="hero__link">
+                    <a href="#projects" className="hero__link">
                         <span>selected works</span>
                     </a>
                 </div>
             </section>
-            <section className="projects">
-                <h2>Projects</h2>
+            <section className="projects container" id="projects">
+                <header className="projects-header">
+                    <h2>Projects</h2>
+                    <img src={ArrowDown} alt="arrow-down-icon" />
+                </header>
                 <div className="projects-container">
                     {designProjects.map(project => {
-                        return (
-                            <div className="project">
-                                <a
-                                    href={project.figmaLinks.prototype}
-                                    target="_blank"
-                                    className="project__img-container"
-                                >
-                                    <img
-                                        className="project__img"
-                                        src={project.imgInfo.imgSrc}
-                                        alt={project.imgInfo.imgAlt}
-                                    />
-                                </a>
-                                <h4>{project.subtitle}</h4>
-                                <h3>{project.title}</h3>
-                            </div>
-                        );
+                        return <Project key={uuid()} project={project} />;
                     })}
                 </div>
             </section>

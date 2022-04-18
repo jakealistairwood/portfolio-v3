@@ -3,9 +3,9 @@ import "./Navbar.scss";
 
 const Navbar = () => {
     return (
-        <header className="navbar">
+        <nav className="navbar">
             <div className="navbar__container">
-                <a href="" className="navbar__logo">
+                <a href="#" className="navbar__logo">
                     Jake Wood
                 </a>
                 <ul className="navbar__nav-links">
@@ -14,7 +14,7 @@ const Navbar = () => {
                     <li className="navbar__nav-link">Contact</li>
                 </ul>
             </div>
-        </header>
+        </nav>
     );
 };
 
