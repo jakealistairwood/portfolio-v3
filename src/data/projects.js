@@ -4,7 +4,7 @@ export const designProjects = [
         subtitle: "Email Client App",
         description: "UI Design for a Fictional Email Client Provider.",
         imgInfo: {
-            imgSrc: "./images/Relay.png",
+            imgSrc: "./portfolio-v3/images/Relay.png",
             imgAlt: `Preview for the Relay Email Application`,
         },
         figmaLinks: {
@@ -18,7 +18,7 @@ export const designProjects = [
         subtitle: "Landing Page",
         description: "Landing Page Design Lift for a Dog Training Website.",
         imgInfo: {
-            imgSrc: "./images/TPP.png",
+            imgSrc: "./portfolio-v3/images/TPP.png",
             imgAlt: `Preview for the Positive Pup landing page`,
         },
         figmaLinks: {
@@ -33,7 +33,7 @@ export const designProjects = [
         description:
             "Landing Page for a Fictional Currency Converter Application",
         imgInfo: {
-            imgSrc: "./images/Synergy-landing-page.png",
+            imgSrc: "./portfolio-v3/images/Synergy-landing-page.png",
             imgAlt: `Preview for the Synergy Landing Page`,
         },
         figmaLinks: {
@@ -48,7 +48,7 @@ export const designProjects = [
         description:
             "Portal for a Fictional Currency Converter Application. (Work In Progress).",
         imgInfo: {
-            imgSrc: "./images/Synergy-portal.png",
+            imgSrc: "./portfolio-v3/images/Synergy-portal.png",
             imgAlt: `Preview for the Synergy Portal`,
         },
         figmaLinks: {
@@ -63,7 +63,7 @@ export const designProjects = [
         description:
             "A Progressive Web App to allow musical event goers to view the event program on their personal device.",
         imgInfo: {
-            imgSrc: "./images/OAE-mobile.png",
+            imgSrc: "./portfolio-v3/images/OAE-mobile.png",
             imgAlt: `Preview for a musical event programme for the OAE.`,
         },
         figmaLinks: {
@@ -78,7 +78,7 @@ export const designProjects = [
         description:
             "Dashboard that allows the admin at the OAE to create a digital event program for their upcoming shows.",
         imgInfo: {
-            imgSrc: "./images/OAE-portal.png",
+            imgSrc: "./portfolio-v3/images/OAE-portal.png",
             imgAlt: `Preview for the OAE Digital Event Creator platform`,
         },
         figmaLinks: {
@@ -93,7 +93,7 @@ export const designProjects = [
         description:
             "Dashboard that allows a HR team to keep track of existing and completed tickets.",
         imgInfo: {
-            imgSrc: "./images/UnityHR.png",
+            imgSrc: "./portfolio-v3/images/UnityHR.png",
             imgAlt: `Preview for the UnityHR Ticket Management software`,
         },
         figmaLinks: {
@@ -108,7 +108,7 @@ export const designProjects = [
         description:
             "A Cyber Security platform to check the security level of your network.",
         imgInfo: {
-            imgSrc: "./images/Lujam.png",
+            imgSrc: "./portfolio-v3/images/Lujam.png",
             imgAlt: `Preview for the Lujam Cyber Security Network platform`,
         },
         figmaLinks: {
@@ -123,7 +123,7 @@ export const designProjects = [
         description:
             "Built for the students at Nology as part of a front-end development tech test.",
         imgInfo: {
-            imgSrc: "./images/todos.png",
+            imgSrc: "./portfolio-v3/images/todos.png",
             imgAlt: `Preview for the Todo List application`,
         },
         figmaLinks: {
@@ -133,3 +133,5 @@ export const designProjects = [
         },
     },
 ];
+
+export const developmentProjects = [];

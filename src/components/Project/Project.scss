@@ -1,8 +1,12 @@
+@use "../../assets/sass/abstracts/variables" as *;
+
 .project {
     width: 100%;
 
     .project__img-container {
         border-radius: 8px;
+        overflow: hidden;
+
         img {
             max-width: 100%;
             display: block;
@@ -12,6 +16,7 @@
 
             &:hover {
                 opacity: 1;
+                transform: scale(0.95);
             }
         }
     }
@@ -25,8 +30,10 @@
     }
 
     h4 {
-        font-size: 2.4rem;
-        letter-spacing: -0.12rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.12rem;
+        text-transform: uppercase;
+        font-family: $secondary-font;
     }
 
     p {

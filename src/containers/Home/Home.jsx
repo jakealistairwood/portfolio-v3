@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.scss";
 import ScrollIndicator from "../../assets/images/icons/scroll-indicator.svg";
-import { designProjects } from "../../data/projects";
+import { designProjects, developmentProjects } from "../../data/projects";
 import ArrowDown from "../../assets/images/icons/arrow-down.svg";
 import MailIcon from "../../assets/images/icons/email.svg";
 import Project from "../../components/Project/Project";
@@ -12,6 +12,24 @@ import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
     console.log(designProjects);
+    const [tabToggle, setTabToggle] = useState("design");
+
+    const handleDesignTab = () => {
+        setTabToggle("design");
+    };
+
+    const handleDevelopmentTab = () => {
+        setTabToggle("development");
+    };
+
+    const renderProjectCards =
+        tabToggle === "design"
+            ? designProjects.map(project => {
+                  return <Project key={uuid()} project={project} />;
+              })
+            : developmentProjects.map(project => {
+                  return <Project key={uuid()} project={project} />;
+              });
 
     return (
         <>
@@ -72,17 +90,30 @@ const Home = () => {
                         <img src={ArrowDown} alt="arrow-down-icon" />
                     </div>
                     <div>
-                        <button className="tab-btn tab-btn--active">
+                        <button
+                            onClick={handleDesignTab}
+                            className={
+                                tabToggle === "design"
+                                    ? "tab-btn tab-btn--active"
+                                    : "tab-btn"
+                            }
+                        >
                             Design
                         </button>
-                        <button className="tab-btn">Code</button>
+                        <span class="projects-header--span">/</span>
+                        <button
+                            onClick={handleDevelopmentTab}
+                            className={
+                                tabToggle === "development"
+                                    ? "tab-btn tab-btn--active"
+                                    : "tab-btn"
+                            }
+                        >
+                            Code
+                        </button>
                     </div>
                 </header>
-                <div className="projects-container">
-                    {designProjects.map(project => {
-                        return <Project key={uuid()} project={project} />;
-                    })}
-                </div>
+                <div className="projects-container">{renderProjectCards}</div>
             </section>
             <section className="about container">
                 <div className="about-container">
